@@ -1,0 +1,90 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.btn-group {
+  margin: 10px 0;
+  display: inline-flex;
+  border: 1px solid #f2fcfe;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.btn-group button {
+  color: #f2fcfe;
+  /* background-color: #06beb6; */
+  background: linear-gradient(to top, #06beb6, #48b1bf);
+  border: none;
+  border-right: 1px solid #f2fcfe;
+  padding: 10px 24px;
+  cursor: pointer;
+}
+.btn-group button:hover {
+  /* background-color: #48b1bf; */
+  background: linear-gradient(to bottom, #06beb6, #48b1bf);
+}
+.btn-group button:last-child {
+  border-right: none;
+}
+
+@media screen and (min-width: 768px) {
+  .tr > div > span {
+    display: none;
+  }
+
+  .table {
+    background-color: #ffffff;
+    margin: 10px 0;
+    box-shadow: 0px 0px 15px #ccc;
+    display: table;
+    width: 100%;
+  }
+
+  .thead .tr > div {
+    border-bottom: 2px solid #ccc;
+    font-weight: bold;
+    background: rgb(221, 221, 221);
+  }
+  .thead,
+  .tbody {
+    display: table-row-group;
+  }
+  .tr {
+    display: table-row;
+  }
+  .tr:hover,
+  .tr:nth-child(even):hover {
+    background-color: rgb(204, 204, 204);
+  }
+  .tr:nth-child(even) {
+    background-color: rgb(238, 238, 238);
+  }
+  .tr > div {
+    padding: 10px;
+    display: table-cell;
+    border-bottom: 1px solid #dddddd;
+    line-height: 1.42;
+    vertical-align: top;
+  }
+
+  .tr > div:first-child {
+    padding-left: 20px;
+  }
+
+  .tr > div:last-child {
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tr > div > span {
+    display: inline;
+    font-weight: bold;
+  }
+  .thead {
+    display: none;
+  }
+  .tr {
+    padding: 10px 0;
+    border-top: 1px solid #dddddd;
+    line-height: 1.42;
+  }
+}
