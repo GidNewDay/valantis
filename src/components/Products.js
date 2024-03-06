@@ -21,7 +21,7 @@ const Products = () => {
       const timestamp = t.toISOString().split("T")[0].replace(/-/g, "");
       const authString = md5(`Valantis_${timestamp}`);
       const xhr = new XMLHttpRequest();
-      xhr.open("POST", "http://api.valantis.store:40000/", true);
+      xhr.open("POST", "https://api.valantis.store:41000/", true);
       xhr.setRequestHeader("Content-Type", "application/json");
       xhr.setRequestHeader("X-Auth", authString);
 
